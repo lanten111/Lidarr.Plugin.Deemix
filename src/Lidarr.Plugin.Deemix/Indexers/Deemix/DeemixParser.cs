@@ -98,7 +98,7 @@ namespace NzbDrone.Core.Indexers.Deemix
 
             // bitrate is in kbit/sec, 128 = 1024/8
             result.Size = x.DurationInSeconds * actualBitrate * 128L;
-            result.Title = $"{x.ArtistName} - {x.AlbumTitle}";
+            result.Title = $"{x.AlbumTitle}";
 
             if (year > 0)
             {
